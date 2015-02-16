@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET DONE */
+
+body, html { height: 100%; }
+
+body {
+  color: #fff;
+  margin: 0 auto;
+  font: 1em/1.3em Verdana, Helvetica, sans-serif;
+}
+.clearfix {
+  clear: both;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #F1F1F2;
+}
+h5 {
+  color: #193B6B !important;
+}
+a {
+  text-decoration: none;
+  color: #fff;  
+  margin: 0 10px;
+}
+p{
+  font-size: 12px;
+  color: #5B5B5F;
+}
+
+/* Menu Styles */
+
+.valign {
+  position: relative;
+  vertical-align: top;
+}
+.vertical {
+  word-wrap: break-word;
+  width: 10px;
+  display: inline-block;
+  line-height: 18px;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 31px auto 0;
+  width: 50%;
+  height: 197px;
+}
+  .navbar a.menu {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 23px;
+    line-height: 50px;
+  }
+  .navbar a.link {
+    position: relative;
+    float: left;
+    margin: 0 0 0 9px;
+    width: 180px;
+    height: 197px;
+  }
+  .navbar a.link img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .navbar a.link span.active,
+    .navbar a.link span.hover {     
+      display: table; 
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      
+      transform-origin: 0% 50% 0px;
+      -webkit-transform-origin: 0% 50% 0px;
+      transition: .2s; 
+      -webkit-transition: .2s;      
+    }
+    .navbar a.link span.active {
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      
+      left: 0;
+    }
+      .navbar a.link:hover span.active {
+        transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, -5, 0, 0, 1);
+        -webkit-transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, -5, 0, 0, 1);
+      }
+      .navbar a.link span.active .vertical { color: #aaa; 
+        }
+    .navbar a.link span.hover {
+      transform: matrix3d(0, 0, -1, 0.00166, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1);
+      -webkit-transform: matrix3d(0, 0, -1, 0.00166, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1);
+      
+      left: 100%;
+      background-color: #f1f1f2;
+    }
+      .navbar a.link:hover span.hover {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, -180, 0, 0, 1);
+        -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, -180, 0, 0, 1);
+      }
+    
+
+
+  
